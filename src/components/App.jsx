@@ -1,29 +1,33 @@
-import user from './profile/user.json'
-import data  from './statistics/data.json'
-import Profile from './profile/user-profile'; 
-import StatisticsList from './statistics/statisticsList';
+import user from '../data/user.json'
+import data from '../data/data.json'
+import friends  from '../data/friends.json'
+import Profile from './Profile/User-profile'; 
+import StatisticsList from './StatisticsList/StatisticsList';
+import FriendList from './FriendList/FriendList';
 
 
 const App = () => {
   return (
-    <div>
-
+    <>
       <Profile
-  username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
  
-  followers={user.stats.followers}
-  views={user.stats.views}
-  likes={user.stats.likes} />
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes} />
       
       <StatisticsList
         title="Upload stats"
         stats={data} />
          
       <StatisticsList stats={data} />
-    </div>
+    
+
+      <FriendList friends={friends} />
+    </>
   );
 };
 
