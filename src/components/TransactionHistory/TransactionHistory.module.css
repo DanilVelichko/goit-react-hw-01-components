@@ -1,0 +1,24 @@
+.transaction_history {
+    margin-top: 20px;
+    width: 600px;
+}
+.tr {
+    height: 35px;
+    color:rgb(254, 254, 254);
+    background-color:rgb(0, 130, 251);
+}
+
+.data {
+    color:rgb(173, 173, 174);
+    background-color:rgb(242, 242, 242);
+    text-align: center;
+}
+
+.type {
+      color:rgb(173, 173, 174);
+    background-color:rgb(242, 242, 242);
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    
+}
