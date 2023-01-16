@@ -21,12 +21,7 @@ const FriendList = ({ friends }) => {
 };
 
 FriendList.propTypes = {
- 
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
-  id: PropTypes.string.isRequired,
+  friends: PropTypes.array.isRequired,
 }
 
-console.log(FriendList)
 export default FriendList;

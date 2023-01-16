@@ -28,4 +28,4 @@ StatisticsList.propTypes = {
 
   }))
 }
-export default StatisticsList;
+export default StatisticsList; 
