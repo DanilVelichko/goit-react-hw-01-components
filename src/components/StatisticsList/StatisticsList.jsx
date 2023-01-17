@@ -24,8 +24,11 @@ const StatisticsList = ({ title,  stats }) => {
 };
 
 StatisticsList.propTypes = {
+  title: PropTypes.string.isRequired,
   stats: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.bool,
+    id: PropTypes.string,
+    label: PropTypes.string,
+    percentage: PropTypes.number,
 
   }))
 }
