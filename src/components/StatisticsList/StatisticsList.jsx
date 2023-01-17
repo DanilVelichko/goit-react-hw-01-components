@@ -1,7 +1,6 @@
 import Statistics from '../Statistics/Statistics';
 import PropTypes from 'prop-types'
 import css from "./StatisticsList.module.css";
-import clsx from 'clsx';
 
 const StatisticsList = ({ title,  stats }) => {
   
