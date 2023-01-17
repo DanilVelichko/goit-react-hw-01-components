@@ -1,6 +1,7 @@
 import Statistics from '../Statistics/Statistics';
 import PropTypes from 'prop-types'
 import css from "./StatisticsList.module.css";
+import clsx from 'clsx';
 
 const StatisticsList = ({ title,  stats }) => {
   
@@ -12,7 +13,7 @@ const StatisticsList = ({ title,  stats }) => {
         {stats.map(item => {
           return (
             <Statistics
-              id={item.id}
+              key={item.id}
               label={item.label}
               percentage={item.percentage}
             />)
@@ -25,7 +26,7 @@ const StatisticsList = ({ title,  stats }) => {
 
 StatisticsList.propTypes = {
   stats: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string
+    title: PropTypes.bool,
 
   }))
 }

@@ -15,6 +15,6 @@ Statistics.propTypes = {
  
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
 }
 export default Statistics;
